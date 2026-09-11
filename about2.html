@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JuliUS Studios - About Us</title>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: verdana, sans-serif;
+            padding-bottom: 50px;
+            background-color: lightyellow;
+        }
+
+        @media (max-width: 600px){
+            body{
+                background-color: darkorange;
+            }
+        }
+
+        header {
+            background-color: seagreen;
+            width: 100%;
+            height: 70px;
+            color: white;
+            padding: 15px 50px;
+            position: relative;
+        }
+
+        .HEADING {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .us {
+            color: yellow;
+            display: inline;
+            margin-left: 5px;
+        }
+
+        .studios {
+            display: inline;
+            margin-left: 5px;
+        }
+
+        nav {
+            float: right;
+            margin-top: -30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: yellow;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .sub-banner {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .sub-banner h2 {
+            background-color: seagreen;
+            width: 250px;
+            padding: 10px;
+            border-radius: 50px;
+            color: white;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .ABOUTUS {
+            width: 90%;
+            margin: 20px auto;
+            background-color: seagreen;
+            border-radius: 10px;
+            color: white;
+            padding: 40px;
+            position: relative;
+        }
+
+        .ABOUTUS h1 {
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ABOUTUS h1 span {
+            color: yellow;
+        }
+
+        .about-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5%;
+            width: 100%;
+        }
+
+        .Shooting {
+            width: 50%;
+            font-size: 80%;
+            line-height: 1.6;
+        }
+
+        .Shooting p {
+            margin-bottom: 20px;
+        }
+
+        .VandM {
+            width: 45%;
+            font-size: 80%;
+            line-height: 1.6;
+            border-left: 2px solid white;
+            padding-left: 30px;
+        }
+
+        .lists {
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        .services {
+            background-color: seagreen;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 22px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .cards-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .Photography, .VideoE, .CreativeV {
+            background-color: seagreen;
+            color: white;
+            width: 31%;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 160px;
+        }
+
+        .cards-row p {
+            font-weight: bold;
+            font-size: 18px;
+            color: yellow;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .cards-row ul {
+            padding-left: 20px;
+        }
+
+        .cards-row li {
+            margin-bottom: 5px;
+        }
+
+        .map-section {
+            width: 90%;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .map-section img {
+            width: 100%;
+            max-width: 1285px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: seagreen;
+            border-radius: 50px;
+            color: white;
+            width: 90%;
+            margin: 40px auto 20px auto;
+            padding: 15px 40px;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .footer-left {
+            float: left;
+        }
+
+        .footer-right {
+            float: right;
+        }
+
+        @media (max-width: 992px) {
+            .cards-row {
+                justify-content: center;
+            }
+            .Photography, .VideoE, .CreativeV {
+                width: 45%;
+                min-width: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: auto;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .HEADING {
+                float: none;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            nav {
+                float: none;
+                margin-top: 0;
+                display: block;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                display: inline-block;
+            }
+
+            .about-row {
+                gap: 20px;
+            }
+            .Shooting, .VandM {
+                width: 100%;
+            }
+            .VandM {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 20px;
+            }
+            .Photography, .VideoE, .CreativeV {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="HEADING">Juli<div class="us">US</div><div class="studios">Studios.</div></div>
+        <nav>
+            <a href="home2.html">Home</a>
+            <a href="contacts2.html">Contacts</a>
+            <a href="about2.html">About</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <div class="sub-banner">
+        <h2>The BEST in Town</h2>
+    </div>
+
+    <div class="ABOUTUS">
+        <h1>About <span>US</span></h1>
+        
+        <div class="about-row">
+            <div class="Shooting">
+                <p>We are a creative media studio dedicated to bringing ideas, moments and stories to life through photography, videography, video editing and content creation.</p>
+                <p>From capturing a single meaningful moment to producing an entire visual story, we believe that every image and every frame has something to say. Our goal is not simply to create content, but to create visuals that people can feel, remember and connect with.</p>
+                <p>We combine creativity, technology, and attention to detail to deliver visuals that are both authentic and cinematic. Whether it's a personal photoshoot, a special event, a promotional video, social media content, or a creative project, we approach every project with the same passion: making your vision visible.</p>
+            </div>
+
+            <div class="VandM">
+                <p><strong>Our Vision</strong><br>
+                To build a creative brand that transforms ordinary moments and ideas into extraordinary visual experiences.<br><br>
+                <strong>Our Mission</strong><br>
+                To create high-quality, meaningful and compelling content while helping individuals, businesses and creators tell their stories through the power of visual media.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="lists">
+        <div class="services"><p>What WE Do</p></div>
+
+        <div class="cards-row">
+            <div class="Photography">
+                <p>Photography</p>
+                <ul>
+                    <li>Portraits</li>
+                    <li>Events</li>
+                    <li>Products</li>
+                </ul>
+            </div>
+
+            <div class="VideoE">
+                <p>Video Editing</p>
+                <ul>
+                    <li>Professional editing</li>
+                    <li>Color grading</li>
+                    <li>Sound design</li>
+                </ul>
+            </div>
+
+            <div class="CreativeV">
+                <p>Creative Visuals</p>
+                <ul>
+                    <li>Graphic design</li>
+                    <li>Promotional content</li>
+                    <li>Visual concepts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <img src="location.png" alt="Our Location">
+    </div>
+
+    <footer>
+        <div class="footer-left">www.Year2026</div> 
+        <div class="footer-right">Privacy Policy | Terms & Conditions</div>
+    </footer>
+
+</body>
+</html>

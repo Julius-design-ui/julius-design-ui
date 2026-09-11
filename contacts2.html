@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JuliUS Studios - Contacts</title>
+
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: verdana, sans-serif;
+            padding-bottom: 50px;
+            background-color: lightyellow;
+        }
+
+        @media (max-width: 600px){
+            body{
+                background-color: darkorange;
+            }
+        }
+
+        header {
+            background-color: seagreen;
+            width: 100%;
+            height: 70px;
+            color: white;
+            padding: 15px 50px;
+            position: relative;
+        }
+
+        .HEADING {
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .us {
+            color: yellow;
+            display: inline;
+            margin-left: 5px;
+        }
+
+        .studios {
+            display: inline;
+            margin-left: 5px;
+        }
+
+        nav {
+            float: right;
+            margin-top: -30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: yellow;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .head {
+            margin-top: 50px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .head img {
+            width: 90%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin-left: 65px;
+        }
+
+        .contacts {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: yellow;
+            font-size: clamp(40px, 8vw, 100px);
+            font-weight: bold;
+            text-align: center;
+            width: 90%;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .cards-container {
+            width: 90%;
+            margin: 40px auto 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .visit, .call, .contact {
+            background-color: seagreen;
+            width: 31%;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            height: 280px;
+            padding: 20px;
+        }
+
+        .visitus, .callus, .contactus {
+            color: yellow;
+            font-size: 150%;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .VISITUS, .CALLUS, .CONTACTUS {
+            font-size: 95%;
+            margin-top: 15px;
+            color: yellow;
+            font-weight: bold;
+        }
+
+        .visit p, .call p, .contact p {
+            font-size: 85%;
+            line-height: 1.4;
+        }
+
+        footer {
+            margin-top: 60px;
+            background-color: seagreen;
+            border-radius: 50px;
+            color: white;
+            width: 90%;
+            margin-left: 5%;
+            padding: 15px 40px;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .footer-left {
+            float: left;
+        }
+
+        .footer-right {
+            float: right;
+        }
+
+        @media (max-width: 1024px) {
+            .cards-container {
+                justify-content: center;
+            }
+            .visit, .call, .contact {
+                width: 45%;
+                min-width: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                height: auto;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .HEADING {
+                float: none;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            nav {
+                float: none;
+                margin-top: 0;
+                display: block;
+            }
+            
+            nav a {
+                margin: 0 10px;
+                display: inline-block;
+            }
+
+            .cards-container {
+                width: 90%;
+                gap: 20px;
+            }
+            
+            .visit, .call, .contact {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="HEADING">Juli<div class="us">US</div><div class="studios">Studios.</div></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contacts2.html">Contacts</a>
+            <a href="about2.html">About</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <div class="head">
+        <img src="road.jpg" alt="Road to studio"/>
+        <div class="contacts">
+            <p>CONTACT US</p>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="visit">
+            <div class="visitus"><p>Visit Us</p></div>
+            <p>Let us bring your creative vision to life. Step into our studio this week to look at our portfolio, explore our backdrops, and plan your next big project over a warm cup of coffee.</p>
+            <div class="VISITUS"><p>Cathedral Area, Maseru, Lesotho</p></div>
+        </div>
+
+        <div class="call">
+            <div class="callus"><p>Call Us</p></div>
+            <p>Let us bring your creative vision to life. Step into our studio this week to look at our portfolio, explore our backdrops, and plan your next big project over a warm cup of coffee.</p>
+            <div class="CALLUS"><p>+266 57068929 / 62695787</p></div>
+        </div>
+
+        <div class="contact">
+            <div class="contactus"><p>Contact Us</p></div>
+            <p>Let us bring your creative vision to life. Step into our studio this week to look at our portfolio, explore our backdrops, and plan your next big project over a warm cup of coffee.</p>
+            <div class="CONTACTUS"><p>juliusntoiy@gmail.com</p></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-left">www.Year2026</div> 
+        <div class="footer-right">Privacy Policy | Terms & Conditions</div>
+    </footer>
+
+</body>
+</html>
