@@ -1,258 +1,298 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JuliUS Studios - Leave a Comment</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>JuliUS Studios - Feedback</title> 
 
-    <style type="text/css">
-        * {
-            box-sizing: border-box;
+    <style type="text/css"> 
+        * { 
+            box-sizing: border-box; 
             margin: 0;
-            padding: 0;
-        }
 
-        body {
-            font-family: verdana, sans-serif;
-            padding-bottom: 50px;
-            background-color: lightyellow;
-        }
 
-        @media (max-width: 600px){
-            body{
+            padding: 0; 
+        } 
+
+        body { 
+            font-family: verdana, sans-serif; 
+            padding-bottom: 50px; 
+            background-color: lightyellow; 
+        } 
+
+        @media (max-width: 600px){ 
+            body{ 
                 background-color: darkorange;
-            }
-        }
-        
 
-        header {
-            background-color: seagreen;
-            width: 100%;
-            height: 70px;
-            color: white;
-            padding: 15px 50px;
-            position: relative;
-        }
 
-        .HEADING {
-            font-size: 32px;
-            font-weight: bold;
-            color: white;
-            letter-spacing: -0.5px;
-            display: flex;
-            align-items: center;
+            } 
+        } 
+         
+
+        header { 
+            background-color: seagreen; 
+            width: 100%; 
+            height: 70px; 
+            color: white; 
+            padding: 15px 50px; 
+            position: relative; 
         }
 
-        .us {
+
+
+        .HEADING { 
+            font-size: 32px; 
+            font-weight: bold; 
+            color: white; 
+            letter-spacing: -0.5px; 
+            display: flex; 
+            align-items: center; 
+        } 
+
+        .us { 
             color: yellow;
-            display: inline;
-            margin-left: 5px;
-        }
 
-        .studios {
-            display: inline;
-            margin-left: 5px;
-        }
 
-        nav {
-            float: right;
+            display: inline; 
+            margin-left: 5px; 
+        } 
+
+        .studios { 
+            display: inline; 
+            margin-left: 5px; 
+        } 
+
+        nav { 
+            float: right; 
             margin-top: -30px;
+
+
+        } 
+
+        nav a { 
+            text-decoration: none; 
+            color: yellow; 
+            margin-left: 20px; 
+            font-weight: bold; 
+        } 
+
+        nav a:hover { 
+            text-decoration: underline; 
         }
 
-        nav a {
-            text-decoration: none;
-            color: yellow;
-            margin-left: 20px;
-            font-weight: bold;
-        }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
 
-        h2 {
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            color: #333333;
-        }
+        h2 { 
+            text-align: center; 
+            margin-top: 30px; 
+            margin-bottom: 10px; 
+            color: #333333; 
+        } 
 
-        .form-container {
-            width: 50%;
-            min-width: 320px;
+        .form-container { 
+            width: 50%; 
+            min-width: 320px; 
             margin: 30px auto;
-            background-color: seagreen;
-            padding: 30px;
-            border-radius: 10px;
-            color: white;
-        }
 
-        .form-group {
-            margin-bottom: 20px;
-        }
 
-        .form-group label {
+            background-color: seagreen; 
+            padding: 30px; 
+            border-radius: 10px; 
+            color: white; 
+        } 
+
+        .form-group { 
+            margin-bottom: 20px; 
+        } 
+
+        .form-group label { 
             display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            font-size: 90%;
-        }
 
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="tel"],
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
+            margin-bottom: 8px; 
+            font-weight: bold; 
+            font-size: 90%; 
+        } 
+
+        .form-group input[type="text"], 
+        .form-group input[type="email"], 
+        .form-group input[type="tel"], 
+        .form-group textarea, 
+        .form-group select { 
+            width: 100%; 
             padding: 10px;
-            border: 2px solid white;
-            border-radius: 5px;
-            font-family: verdana, sans-serif;
-            font-size: 90%;
-        }
 
-        .radio-group {
-            margin-top: 5px;
-        }
 
-        .radio-group input {
+            border: 2px solid white; 
+            border-radius: 5px; 
+            font-family: verdana, sans-serif; 
+            font-size: 90%; 
+        } 
+
+        .radio-group { 
+            margin-top: 5px; 
+        } 
+
+        .radio-group input { 
             margin-right: 5px;
-        }
 
-        .radio-label {
-            margin-right: 20px;
-            display: inline-block;
-            font-size: 90%;
-        }
 
-        .submit-btn {
-            background-color: yellow;
-            color: black;
+        } 
+
+        .radio-label { 
+            margin-right: 20px; 
+            display: inline-block; 
+            font-size: 90%; 
+        } 
+
+        .submit-btn { 
+            background-color: yellow; 
+            color: black; 
             border: none;
-            padding: 12px 20px;
-            font-size: 100%;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
+
+
+            padding: 12px 20px; 
+            font-size: 100%; 
+            font-weight: bold; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            width: 100%; 
+            margin-top: 10px; 
+        } 
+
+        .submit-btn:hover { 
+            background-color: #e6e600; 
         }
 
-        .submit-btn:hover {
-            background-color: #e6e600;
-        }
 
-        footer {
-            margin-top: 60px;
-            background-color: seagreen;
-            color: white;
+
+        footer { 
+            margin-top: 60px; 
+            background-color: seagreen; 
+            color: white; 
             width: 100%;
 height: 10%;
-            margin-left: - 2%;
-            padding: 15px 40px;
-            overflow: hidden;
+            margin-left: - 2%; 
+            padding: 15px 40px; 
+            overflow: hidden; 
             clear: both;
 font-size: 10px;
         }
 
-        .footer-left {
-            float: left;
-        }
 
-        .footer-right {
-            float: right;
-        }
 
-        @media (max-width: 768px) {
-            header {
+        .footer-left { 
+            float: left; 
+        } 
+
+        .footer-right { 
+            float: right; 
+        } 
+
+        @media (max-width: 768px) { 
+            header { 
                 height: auto;
-                text-align: center;
-                padding: 15px;
-            }
-            .HEADING {
-                float: none;
-                margin-bottom: 10px;
-                display: block;
-            }
-            nav {
-                float: none;
-                margin-top: 0;
-                display: block;
-            }
-            nav a {
-                margin: 0 10px;
-                display: inline-block;
-            }
-        }
 
-    </style>
+
+                text-align: center; 
+                padding: 15px; 
+            } 
+            .HEADING { 
+                float: none; 
+                margin-bottom: 10px; 
+                display: block; 
+            } 
+            nav { 
+                float: none; 
+                margin-top: 0; 
+                display: block;
+
+
+            } 
+            nav a { 
+                margin: 0 10px; 
+                display: inline-block; 
+            } 
+        } 
+
+    </style> 
 </head>
 <body>
 
     <header>
-        <div class="HEADING">Juli<div class="us">US</div><div class="studios">Studios.</div></div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="contacts2.html">Contacts</a>
-            <a href="about2.html">About</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
-    </header>
 
-    <h2>Client Feedback Box</h2>
 
-    <div class="form-container">
-        <form action="#" method="POST">
-            
-            <div class="form-group">
-                <label for="username">Full Name</label>
-                <input type="text" id="username" name="username" required>
-            </div>
+        <div class="HEADING">Juli<div class="us">US</div><div class="studios">Studios.</div></div> 
+        <nav> 
+            <a href="index.html">Home</a> 
+            <a href="contacts2.html">Contacts</a> 
+            <a href="about2.html">About</a> 
+            <a href="feedback.html">Feedback</a> 
+        </nav> 
+    </header> 
 
-            <div class="form-group">
-                <label for="useremail">Email Address</label>
-                <input type="email" id="useremail" name="useremail" required>
-            </div>
+    <h2>Client Feedback Box</h2> 
 
-            <div class="form-group">
-                <label for="userphone">Phone Number</label>
-                <input type="tel" id="userphone" name="userphone" required>
-            </div>
 
-            <div class="form-group">
-                <label for="service-type">Service Interested In</label>
-                <select id="service-type" name="service-type">
-                    <option value="shooting">Video Shooting</option>
-                    <option value="editing">Video Editing</option>
-                    <option value="photography">Photography</option>
-                </select>
-            </div>
+    <div class="form-container"> 
+        <form action="#" method="POST"> 
+             
+            <div class="form-group"> 
+                <label for="username">Full Name</label> 
+                <input type="text" id="username" name="username" required> 
+            </div> 
 
-            <div class="form-group">
-                <label>Preferred Contact Method</label>
+            <div class="form-group"> 
+                <label for="useremail">Email Address</label> 
+
+                <input type="email" id="useremail" name="useremail" required> 
+            </div> 
+
+            <div class="form-group"> 
+                <label for="userphone">Phone Number</label> 
+                <input type="tel" id="userphone" name="userphone" required> 
+            </div> 
+
+            <div class="form-group"> 
+                <label for="service-type">Service Interested In</label> 
+
+                <select id="service-type" name="service-type"> 
+                    <option value="shooting">Video Shooting</option> 
+                    <option value="editing">Video Editing</option> 
+                    <option value="photography">Photography</option> 
+                </select> 
+            </div> 
+
+            <div class="form-group"> 
+                <label>Preferred Contact Method</label> 
                 <div class="radio-group">
-                    <input type="radio" id="contact-email" name="preferred-contact" value="email" checked>
-                    <label for="contact-email" class="radio-label">Email</label>
-                    
-                    <input type="radio" id="contact-phone" name="preferred-contact" value="phone">
-                    <label for="contact-phone" class="radio-label">Phone</label>
-                </div>
-            </div>
+
+
+                    <input type="radio" id="contact-email" name="preferred-contact" value="email" checked> 
+                    <label for="contact-email" class="radio-label">Email</label> 
+                     
+                    <input type="radio" id="contact-phone" name="preferred-contact" value="phone"> 
+                    <label for="contact-phone" class="radio-label">Phone</label> 
+                </div> 
+            </div> 
 
             <div class="form-group">
-                <label for="usercomments">Comments / Project Details</label>
-                <textarea id="usercomments" name="usercomments" rows="5" required></textarea>
-            </div>
 
-            <button type="submit" class="submit-btn">Submit Details</button>
 
-        </form>
-    </div>
+                <label for="usercomments">Comments / Project Details</label> 
+                <textarea id="usercomments" name="usercomments" rows="5" required></textarea> 
+            </div> 
+
+            <button type="submit" class="submit-btn">Submit Details</button> 
+
+        </form> 
+    </div> 
 
     <footer>
-        <div class="footer-left">www.Year2026</div> 
-        <div class="footer-right">Privacy Policy | Terms & Conditions</div>
-    </footer>
+
+
+        <div class="footer-left">www.Year2026</div>  
+        <div class="footer-right">Privacy Policy | Terms & Conditions</div> 
+    </footer> 
 
 </body>
 </html>
